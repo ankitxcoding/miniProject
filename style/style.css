@@ -28,6 +28,11 @@ body.webSeries {
     background-size: 100%;
 }
 
+body.books {
+    background: url(../photos/bg3.jpg);
+    background-size: 100%;
+}
+
 body{
     background-color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
