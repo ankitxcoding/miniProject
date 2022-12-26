@@ -232,7 +232,7 @@ const overlayContent = document.getElementById('overlay-content');
 /* Open when someone clicks on the span element */
 function openNav(movie) {
   let id = movie.id;
-  fetch(BASE_URL + '/movie/'+id+'/videos?'+API_KEY).then(res => res.json()).then(videoData => {
+  fetch(BASE_URL + '/tv/'+id+'/videos?'+API_KEY).then(res => res.json()).then(videoData => {
     console.log(videoData);
     if(videoData){
       document.getElementById("myNav").style.width = "100%";
@@ -256,7 +256,7 @@ function openNav(movie) {
         })
         
         var content = `
-        <h1 class="no-results">${movie.original_title}</h1>
+        <h1 class="no-results">${movie.original_name}</h1>
         <br/>
         
         ${embed.join('')}
