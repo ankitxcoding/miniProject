@@ -341,3 +341,67 @@ main {
 .dots .dot.active {
     border-color: orange;
 }
+
+
+/* quotes css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+    font-family: helvetica;
+    font-size: 18px;
+  }
+  
+  .container {
+    margin: 200px auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quote-box {
+    border: 2px solid #E50914;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+  }
+  #quote {
+    color: orange;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+  }
+  #speaker {
+    float: inline-start;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+  }
+
+  #title {
+    float: inline-start;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  #btn {
+    align-self: center;
+    border: 2px solid #E50914;
+    background-color: #e5091400;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #btn:focus {
+    outline: none;
+  }
