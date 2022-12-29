@@ -1,9 +1,6 @@
 const quote = document.getElementById('quote');
 const speaker = document.getElementById('speaker');
 const title = document.getElementById('title');
-const btn = document.getElementById("btn");
-
-btn.addEventListener("click", getQuote);
 
 const options = {
 	method: 'GET',
@@ -13,7 +10,6 @@ const options = {
 	}
 };
 
-function getQuote() {
 fetch('https://marvel-quote-api.p.rapidapi.com/', options)
   .then((res) => res.json())
   .then((data) => {
@@ -21,4 +17,3 @@ fetch('https://marvel-quote-api.p.rapidapi.com/', options)
     speaker.innerHTML = `- ${data.Speaker}`;
     title.innerHTML = `- ${data.Title}`;
 });
-}
