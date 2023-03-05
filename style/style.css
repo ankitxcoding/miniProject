@@ -352,13 +352,9 @@ main {
     box-sizing: border-box;
   }
   
-  body {
-    /* font-family: "Lucida Console", "Courier New", monospace; */
+  .container {
     font-family: helvetica;
     font-size: 18px;
-  }
-  
-  .container {
     margin: 200px auto;
     width: 400px;
     display: flex;
