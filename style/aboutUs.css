@@ -343,6 +343,12 @@ main {
     border-color: orange;
 }
 
+body {
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+    font-family: helvetica;
+    font-size: 18px;
+  }
+
 .names {
     font-size: 30px;
     color: orange;
